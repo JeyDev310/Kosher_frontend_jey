@@ -1,0 +1,430 @@
+@import "src/@fuse/scss/fuse";
+#welcome{
+    width: 100%;
+    background: #fff;
+    .title-area{
+        position: relative;
+        .header{
+            width: -webkit-fill-available;
+            margin: 0 352px;
+            position: absolute;
+            z-index: 1000;
+            padding: 30px 0;
+            .logo{
+
+            }
+            .header-info{
+                font: 400 16px/33px 'Lato', sans-serif;
+                color: #fff;
+                .email{
+                    font-weight: 700 !important;
+                    color: #fff !important;
+                }
+                .login-btn{
+                    background-color: #0770e3;
+                    color: #fff;
+                    display: inline-block;
+                    padding: 0 35px;
+                    font: 700 16px/33px 'Lato', sans-serif;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .title-background{
+            //position: absolute;
+            width: 100%;
+            z-index: 0;
+            .background-img{
+                width: 100%;
+                max-width: 100%;
+                height:auto;
+            }
+        }
+        .title{
+            margin: 0 352px;
+            position: absolute;
+            z-index: 1000;
+            color: #fff;
+            width: 545px;
+            padding: 82px 0 0 55px;
+            //float: left;
+            .tt-u{
+                font: 700 83px/86px 'Lato', sans-serif;
+                text-transform: uppercase;
+            }
+            .skew-text{
+                position: absolute;
+                font: 300 64px/70px 'Lato', sans-serif;
+                transform: rotate(-90deg);
+                top: 289px;
+                left: -152px;
+            }
+            
+        }
+        .btm-slide{
+            position: absolute;
+            top: 758px;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .remmondation{
+        margin: 0 352px;
+        padding-top: 60px;
+        .remmondation-text{
+            // float: left;
+            text-transform: uppercase;
+            color: #000;
+            .text-left{
+                font: 700 25px/28px 'Lato', sans-serif;
+                padding: 15px 0 0 15px !important;
+                background: url(assets/images/home-page/icon1.png) no-repeat 0 15px;
+                .text-line{
+                    font-weight: 300;
+                }
+            }
+            .cat-btn{
+                .cat-link{
+                    display: inline-block;
+                    padding: 15px 18px 0 0;
+                    background: url(assets/images/home-page/icon2.png) no-repeat 100% 18px;
+                    color: #000 !important;
+                    font: 700 16px/20px 'Lato', sans-serif;
+                }
+            }
+        }
+        .remmondation-img{
+            padding-top:40px;
+            .restaurant{
+                position: relative;
+                .img{
+                    border-radius: 22px;
+                }
+                .restaurant-gradiante{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(0,0,0);
+                    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 78%);
+                    color: #fff;
+                    border-radius: 22px;
+                  
+                    .restaurant-text{
+                        position: absolute;
+                        left: 20px;
+                        bottom: 20px;
+                        .name{
+                            font: 400 16px/22px 'Lato', sans-serif;
+                        }
+                        .location{
+                            font: 400 16px/22px 'Lato', sans-serif;
+                        }
+                        .explore-btn{
+                            display: inline-block !important;
+                            padding: 0 12px 0 0 !important;
+                            background: url(assets/images/home-page/explore-icon.png) no-repeat 100% 6px;
+                            font: 700 16px/20px 'Lato', sans-serif;
+                            color: #f54500;
+                            text-decoration: none;
+                            transition: all 300ms ease-out 0s;
+                        }
+                    }
+                   
+                }
+            }
+        }
+        
+    }
+    .bule-sec{
+        padding: 40px 0;
+        margin: 90px 0;
+        background: url(assets/images/home-page/bg1.jpg) no-repeat 0 0;
+        background-size: cover;
+        .img-box{
+            margin: 0 352px;
+            .bule-box{
+                width: 380px;
+                height: 523px;
+                border-radius: 22px;
+                color: #fff;
+                padding: 35px 35px 55px;
+                text-align: center;
+                color:#fff;
+                .title{
+                    font: 700 18px/22px 'Lato', sans-serif;
+                    padding: 15px 0 0;
+                    margin:0;
+                }
+                .content{
+                    font: 400 16px/22px 'Lato', sans-serif;
+                    padding: 15px 0 0;
+                    margin:0;
+                }
+            }
+            .bule-box:hover {
+                background: url(assets/images/home-page/icon3.png) no-repeat 50% 100%#02122c;
+            }
+        }
+    }
+
+    .march-sec{
+        margin: 0 352px 90px 352px; 
+        .march-sec-text{
+            // float: left;
+            text-transform: uppercase;
+            color: #000;
+            .text-left{
+                font: 700 25px/28px 'Lato', sans-serif;
+                padding: 15px 0 0 15px !important;
+                background: url(assets/images/home-page/icon1.png) no-repeat 0 15px;
+                .text-line{
+                    font-weight: 300;
+                }
+            }
+            .cat-btn{
+                .cat-link{
+                    display: inline-block;
+                    padding: 15px 18px 0 0;
+                    background: url(assets/images/home-page/icon2.png) no-repeat 100% 18px;
+                    color: #000 !important;
+                    font: 700 16px/20px 'Lato', sans-serif;
+                }
+            }
+        }
+        .march-sec-img{
+            padding-top:40px;
+            .restaurant{
+                position: relative;
+                .img{
+                    border-radius: 5px;
+                }
+                .offer-sec{
+                    width: 84px;
+                    background: #f41818;
+                    position: absolute;
+                    left: 20px;
+                    top: 0;
+                    font: 700 25px/28px 'Lato', sans-serif;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #fff;
+                    div {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        padding: 20px;
+                    }
+                    div:before {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: -28px;
+                        height: 28px;
+                        width: 100%;
+                        background: url(assets/images/home-page/icon4.png) no-repeat 0 0;
+                        height: 28px;
+                        background-size: 100% 100%;
+                        content: "";
+                    }
+                }
+                .restaurant-gradiante{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(0,0,0);
+                    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 78%);
+                    color: #fff;
+                    border-radius: 5px;
+                  
+                    .restaurant-text{
+                        position: absolute;
+                        left: 20px;
+                        bottom: 20px;
+                        font: 400 16px/22px 'Lato', sans-serif;
+                        .name{
+                            
+                        }
+                        .location{
+                           margin-right:15px
+                        }
+                        .explore-btn{
+                            display: inline-block !important;
+                            padding: 0 12px 0 0 !important;
+                            background: url(assets/images/home-page/explore-icon.png) no-repeat 100% 6px;
+                            font: 700 16px/20px 'Lato', sans-serif;
+                            color: #f54500;
+                            text-decoration: none;
+                            transition: all 300ms ease-out 0s;
+                        }
+                    }
+                   
+                }
+            }
+        }
+        
+    }
+    .home-map{
+        padding: 70px 0 80px;
+        background: #ecf6fc;
+        width: 100%;
+        .home-area{
+            margin: 0 352px;
+            // padding-top: 60px;
+            .home-map-text{
+                width: 100%;
+                text-transform: uppercase;
+                color: #000;
+                .text-left{
+                    font: 700 25px/28px 'Lato', sans-serif;
+                    padding: 15px 0 0 15px !important;
+                    background: url(assets/images/home-page/icon1.png) no-repeat 0 15px;
+                    .text-line{
+                        font-weight: 300;
+                    }
+                }
+                .cat-btn{
+                    .cat-link{
+                        display: inline-block;
+                        padding: 15px 18px 0 0;
+                        background: url(assets/images/home-page/icon2.png) no-repeat 100% 18px;
+                        color: #000 !important;
+                        font: 700 16px/20px 'Lato', sans-serif;
+                    }
+                }
+            }
+            .map-sec{
+                padding: 25px 0 0;
+            }
+        }
+    }
+
+    .perfect-trip{
+        background: url(assets/images/home-page/bg2.jpg) no-repeat 0 0;
+        background-size: cover;
+        padding: 100px 0;
+        color: #fff;
+        .perfect-trip-box{
+            margin: 0 352px 0 352px; 
+            .perfect-trip-text{
+                // float: left;
+                text-transform: uppercase;
+                color: #fff;
+                .text-left{
+                    font: 700 25px/28px 'Lato', sans-serif;
+                    padding: 15px 0 0 15px !important;
+                    background: url(assets/images/home-page/icon1_1.png) no-repeat 0 15px;
+                    .text-line{
+                        font-weight: 300;
+                    }
+                }
+                .no-padding{
+
+                }
+                .cat-btn{
+                    .cat-link{
+                        display: inline-block;
+                        padding: 15px 18px 0 0;
+                        background: url(assets/images/home-page/icon2.png) no-repeat 100% 18px;
+                        color: #000 !important;
+                        font: 700 16px/20px 'Lato', sans-serif;
+                    }
+                }
+            }
+            .carousel{	position :relative ;	margin :40px auto 0;	height :auto;	border :none;	overflow : visible ;}
+            .carousel .slides{	margin :0;	padding :0;	border :none;	list-style :none;	position :relative ;	overflow:hidden ; width :525px; height:180px;}
+            .carousel .slides .slideItem {	position :absolute ;	cursor :pointer ;	overflow : hidden;	padding :0;	margin :0;	border :none; background:#fff; border-radius:22px; box-shadow:0 0 6px #000;}
+            .carousel .slides .slideItem a{	display: block ;	text-decoration :none;	margin :0;	padding :0;	border :none;	outline :none;}
+            .carousel .slides .slideItem img{	margin :0;	padding :0;	border :none;	width :100%;	height :100%;}
+
+            .carousel .nextButton{ width:20px; height:36px; background:url(assets/images/home-page/left-arrow.png) no-repeat 0 50%; position:absolute; left:0; top:50%; margin-top:-18px; cursor:pointer;}
+            .carousel .prevButton{ width:20px; height:36px; background:url(assets/images/home-page/right-arrow.png) no-repeat 100% 50%; position:absolute; right:0; top:50%; margin-top:-18px; cursor:pointer;}
+            .carousel .buttonNav{ display:none !important;}
+            .text-left2{ padding:15px 0 0 15px !important; background:url(assets/images/home-page/icon1_1.png) no-repeat 0 15px;}
+
+            .explore-btn{ display: inline-block !important; padding: 0 12px 0 0 !important; background: url(assets/images/home-page/explore-icon.png) no-repeat 100% 6px; font: 700 16px/20px 'Lato', sans-serif; color: #f54500;}
+
+            .black-bg2{ position:absolute; left:0; right:0; bottom:0; width:100%; height:80px; background: rgb(0,0,0); background:rgba(0,0,0,0.5); color:#fff; border-radius:0 0 22px 22px;}
+            .black-bg2 > div{ position:absolute; left:20px; bottom:20px;}
+        }
+    }
+    .footer{
+        color: #fff;
+        .ft-top{
+            background: url(assets/images/home-page/bg3.jpg) no-repeat 0 0;
+            background-size: cover;
+            .ft-top-content{
+                margin: 0 352px;
+                padding: 70px 0 50px;
+                .ft-box{
+                    margin-right:10px;
+                    .text-btm{
+                        background: url(assets/images/home-page/icon5.jpg) no-repeat 0 100%;
+                        padding: 15px 0 10px !important;
+                        margin: 0px;
+                        font: 700 18px/22px 'Lato', sans-serif;
+                    }
+                    .ft-form{
+                        .submit-input{
+                            height: 40px;
+                            background: rgba(255, 255, 255, 0.2);
+                            border: 1px solid #aaa;
+                            text-indent: 10px;
+                            font: 400 15px/40px 'Lato', sans-serif;
+                            width: 100%;
+                            box-sizing: border-box;
+                            color: #999797;
+                            margin: 15px 0 0;
+                            border-radius: 4px;
+                        }
+                        .submit-btn{
+                            background-color: #31d7e6;
+                            color: #090d37;
+                            border: none;
+                            font: 300 16px/30px 'Lato', sans-serif;
+                            width: 100px;
+                            margin: 15px 0 0;
+                        }
+                    }
+                    ul {
+                        padding: 8px 0 0;
+                        margin: 0px;
+                        li {
+                            list-style-type: none;
+                            font: 300 16px/22px 'Lato', sans-serif;
+                            padding: 4px 0 0;
+                            a{
+                                color: #fff;
+                                text-decoration: none;
+                                transition: all 300ms ease-out 0s;
+                            }
+                        }
+                    }
+                }
+            }
+        }     
+        .ft-bottom{
+            background: #040523;
+            .ft-bottom-content{
+                margin: 0 352px;
+                
+                .ft-left{
+                    font: 300 16px/22px 'Lato', sans-serif;
+                    padding: 15px 0 0;
+                }
+                .ft-right{
+                    li{
+                        list-style-type: none;
+                        padding: 0 4px;
+                    } 
+                }
+            }
+        }      
+
+    }
+}
