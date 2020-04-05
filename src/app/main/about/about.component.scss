@@ -1,0 +1,884 @@
+@import "src/@fuse/scss/fuse";
+#about{
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue";
+    color: #212529;
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .bj-background {
+        width: 100%;
+        height: 400px;
+        background: red;
+        background-image: linear-gradient(to right, rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(https://www.doitinparis.com/files/2019/bars-restos-food/restos-branches/09/shabour-resto/thumbs-1180x525/shabour-resto.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .bj-background h1 {
+        text-align: center;
+        color: #fff;
+        padding-top: 135px;
+    }
+    
+    
+    .bj-recommendations .bj-content {
+        margin: -40px auto 26px;
+        background: #0f0644;
+        padding: 40px 100px;
+    }
+    
+    .bj-recommendations .bj-content h5 {
+        border-left: 5px solid #f00;
+        padding-left: 6px;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    
+    .bj-recommendations .bj-content h5 span {
+        font-weight: 100;
+    }
+    
+    .medium-price span.flate {
+        float: right;
+    }
+    
+    .bj-item-box .medium-price h5.border-h5 {
+        border-left: 5px solid #f00;
+        padding-left: 6px;
+        color: #020202;
+        font-weight: 600;
+    }
+    
+    .bj-content .bj-image-box img {
+        width: 100%;
+        height: 140px;
+    }
+    
+    .bj-content .bj-image-box p {
+        text-align: center;
+        color: #fff;
+    }
+    
+    .bj-item-box .medium-price h5 span {
+        font-weight: 400;
+    }
+    
+    .medium-price .card {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #0f0644;
+        background-clip: border-box;
+        border: 0;
+        border-radius: .25rem;
+        color: #fff;
+    }
+    
+    .medium-price .card .card-img-top {
+        width: 100%;
+        height: 180px;
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+    }
+    
+    .medium-price .card .card-body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 12px 18px 0px 18px;
+    }
+    
+    .medium-price .card .card-body .card-title {
+        margin-bottom: 4px;
+    }
+    
+    .medium-price .card .border-success {
+        border-color: #676869a6!important;
+    }
+    
+    .medium-price .card .card-footer {
+        padding: 8px 15px 0px 15px;
+        background-color: rgba(0,0,0,.03);
+        border-top: 1px solid rgba(0,0,0,.125);
+    }
+    
+    .medium-price .card .card-footer p span i.fa.fa-star {
+        margin: 0px 3px;
+        color: red;
+    }
+    
+    .div-border-bottom {
+        border-bottom: 1px solid #656565;
+        width: 97%;
+        margin: 24px auto;
+    }
+    
+    .bj-map {
+        width: 100%;
+        padding: 75px;
+        background: #007bff26;
+    }
+    
+    .bj-map h5 span {
+        font-weight: 400;
+    }
+    
+    .bj-map h5.border-h5 {
+        border-left: 5px solid #080808;
+        padding-left: 6px;
+        color: #020202;
+        font-weight: 600;
+    }
+    
+    .bj-map span.flate {
+        float: right;
+    }
+    
+    .bj-march-deals {
+        margin-bottom: 50px;
+        position: relative;
+    }
+    
+    .bj-march-deals p.p-padding {
+        color: #fff;
+        padding-top: 240px;
+        padding-left: 14px;
+        margin-bottom: 0px;
+        line-height: 1;
+        font-size: 14px;
+    }
+    .bj-march-deals p.span-p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    
+    p.span-p a {
+        text-decoration: none;
+        color: red;
+        padding-left: 12px;
+    }
+    
+    
+    .bj-march-deals h5.border-h5 {
+        border-left: 5px solid #040404;
+        padding-left: 6px;
+        color: #020202;
+        font-weight: 600;
+    }
+    
+    .bj-march-deals h5 span {
+        font-weight: 400;
+    }
+    
+    
+    .bj-march-deals .bj-image1 {
+        width: 100%;
+        height: 300px;
+        background: black;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(6, 6, 6)), url(https://www.hiddencitysecrets.com.au/wp-content/uploads/2019/04/ciao5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .bj-march-deals .bj-image2 {
+        width: 100%;
+        height: 300px;
+        background: black;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(6, 6, 6)), url(https://image.freepik.com/foto-gratis/joven-mujer-comiendo-restaurante_52137-6782.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .bj-march-deals .bj-image3 {
+        width: 100%;
+        height: 300px;
+        background: black;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(6, 6, 6)), url(https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/rjvuayoas9ki1olnexkf);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .bj-march-deals .bj-image1 p span a {
+        color: red;
+        text-decoration: none;
+    }
+    
+    .type-of-business h4 {
+        background: #0f0644;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px;
+        padding-left: 25px;
+        color: #fff;
+    }
+    
+    .bj-checkbox {
+        padding: 8px 24px;
+    }
+    
+    .type-of-business {
+        box-shadow: 0px 2px 4px #0000005c;
+    }
+    
+    /* The container */
+    .container-box {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 6px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    /* Hide the browser's default checkbox */
+    .container-box input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    /* Date Ribbon */
+    .date {
+        background: red;
+        float: left;
+        height: 75px;
+        margin-left: 15px;
+        position: relative;
+        width: 70px;
+    }
+    .date p {
+        color: #f6f6f6;
+        font: 18px/30px Georgia, sans-serif;
+        position: relative;
+        text-align: center;
+        text-shadow: 0 -1px 1px hsla(0, 0%, 0%, 0.1);
+    }
+    .date .day {
+        display: block;
+        font-size: 28px;
+        padding-top: 6px;
+    }
+    /* Traditional Ribbon */
+    .traditional:after,
+    .traditional:before {
+        border-top: 17px solid red;
+        bottom: -15px;
+        content: '';
+        height: 0;
+        position: absolute;
+        width: 0;
+    }
+    .traditional:after {
+        border-right: 35px solid transparent;
+        left: 0;
+    }
+    .traditional:before {
+        border-left: 35px solid transparent;
+        right: 0;
+    }
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #000;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .container-box:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    
+    /* When the checkbox is checked, add a blue background */
+    .container-box input:checked ~ .checkmark {
+        background-color: #000000;
+    }
+    
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    /* Show the checkmark when checked */
+    .container-box input:checked ~ .checkmark:after {
+      display: block;
+    }
+    
+    /* Style the checkmark/indicator */
+    .container-box .checkmark:after {
+        left: 7px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    .type-of-business button.show_hide {
+        border: 0;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        color: #007bff;
+    }
+    
+    
+    .bj-about {
+        width: 100%;
+        height: 400px;
+        background: red;
+        background-image: linear-gradient(to right, rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(https://upserve.com/media/sites/2/bigstock-125615822-1100x600.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .bj-about h1 {
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        padding-top: 135px;
+    }
+    
+    .bj-about-text {
+        margin: 50px 0;
+    }
+    
+    .bj-about-img img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .about-box h3 {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .about-box p {
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+    .bj-text-design .about-text p {
+        text-align: justify;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+    }
+    
+    .bj-text-design .about-text h4 {
+        font-size: 21px;
+    }
+    
+    .bj-image-border {
+        text-align: center;
+        margin: 30px 0;
+    }
+    
+    .about-text {
+        margin: 30px 0;
+    }
+    
+    .bj-image-border img {
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        border: 2px solid #007bff;
+        padding: 6px;
+    }
+    
+    .bj-about-background {
+        width: 100%;
+        height: 480px;
+        background: #013063;
+        padding: 60px 0px;
+        margin: 50px 0;
+    }
+    .bj-image-height img {
+        width: 100%;
+        height: 460px;
+    }
+    
+    
+    .bj-text-list {
+        color: #fff;
+    }
+    
+    a.about-btn {
+        padding: 10px 24px;
+        border: 0;
+        background: #040404;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .carousel-wrap {
+        margin: 90px auto;
+        padding: 0 5%;
+        width: 100%;
+        position: relative;
+    }
+    
+    /* fix blank or flashing items on carousel */
+    .owl-carousel .item {
+      position: relative;
+      z-index: 100; 
+      -webkit-backface-visibility: hidden; 
+    }
+    
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 250px;
+        -webkit-transform-style: preserve-3d;
+        height: 250px;
+        border-radius: 50%;
+        border: 7px solid #cdcbcd;
+        margin: auto;
+    }
+    
+    /* end fix */
+    .owl-nav  {
+    //   margin-top: -26px;
+    //   position: absolute;
+    //   top: 50%;
+      color: #cdcbcd;
+    }
+    
+    .owl-nav .owl-btn {
+      font-size: 52px;
+    }
+    
+    .owl-nav .owl-prev {
+        position: absolute;
+        top: 100px;
+        left: -30px;
+        outline: 0 !important;
+    }
+    
+    .owl-nav .owl-next {
+        position: absolute;
+        top: 100px;
+        right: -30px;
+        outline: 0 !important;
+    }
+    
+    
+    .bj-reviews {
+        margin-bottom: 36px;
+    }
+    .reviews-slider{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .reviews-slider .carousel-control-next, .reviews-slider .carousel-control-prev{
+        width:20px;
+        color: grey;
+        font-size: 20px;
+    }
+    .reviews-slider .carousel-control-prev{
+        left : -30px;
+    }
+    .reviews-slider .carousel-control-next{
+        right : -30px;
+    }
+    
+    .carousel-item {
+        width: 100%;
+        padding: 31px 0px;
+        background: #403e3e1a;
+        border-radius: 12px;
+    }
+    
+    .carousel-img {
+        text-align: center;
+    }
+    
+    .carousel-img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .carousel-text span {
+        background: red;
+        padding: 1px 14px;
+        border-radius: 15px;
+        color: #fff;
+    }
+    
+    .carousel-text p {
+        width: 91%;
+    }
+    
+    .carousel-text button.show_hide {
+        border-radius: 10px;
+        color: red;
+        border: 1px solid;
+        padding: 0px 24px;
+        outline: none;
+    }
+    
+    
+    /*........................................about.css.................................*/
+    
+    
+    /*.........................................footer.css................................*/
+    
+    
+    /*........................................restauants.css..............................*/
+    
+    .bj-origem-fresh {
+        margin: 40px 0;
+    }
+    
+    .bj-origem p span i.fa.fa-star {
+        color: red;
+        font-size: 16px;
+    }
+    
+    .bj-origem button.btn.btn-danger {
+        width: 130px;
+        font-weight: 600;
+        background: red;
+        margin-bottom: 10px;
+    }
+    
+    .btn-danger {
+        background-color: red;
+    }
+    
+    .btn-outline-danger:hover {
+        color: #fff;
+        background-color: red;
+        border-color: #dc3545;
+    }
+    
+    .bj-origem p.p-bold {
+        color: #aba2a2;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    
+    .bj-origem-card-img img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .bj-origem-card {
+        margin: 50px 0px;
+    }
+    
+    .bj-origem-card-img {
+        width: 50%;
+        height: 300px;
+        float: left;
+    }
+    
+    .bj-origem-card-box {
+        background: #0f0644;
+        width: 50%;
+        float: left;
+        padding: 25px;
+        color: #fff;
+        height: 382px;
+        margin: -40px 0 100px 0px;
+    }
+    
+    .bj-origem-card-box p.p-bold span i {
+        color: red;
+    }
+    
+    .bj-origem-card-box .float-right i {
+        color: red;
+    }
+    
+    .bj-origem-card-box h5.border-h5 {
+        border-left: 5px solid #f00;
+        padding-left: 6px;
+        color: #ffffff;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    
+    .bj-origem-card-box h5 span {
+        font-weight: 400;
+    }
+    
+    .bj-origem-card-box ul {
+        list-style: none;
+        display: initial;
+    }
+    
+    .bj-origem-card-box ul li {
+        margin: 20px 0px;
+    }
+    
+    .bj-origem-card-box ul li i {
+        border: 1px solid;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .bj-origem-card-img2 img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .bj-origem-card2 {
+        margin: 50px 0px;
+    }
+    
+    .bj-origem-card-img2 {
+        width: 50%;
+        height: 300px;
+        float: right;
+    }
+    
+    .bj-origem-card-box2 {
+        background: #0f0644;
+        width: 50%;
+        float: right;
+        padding: 25px;
+        color: #fff;
+        height: 382px;
+        margin: -40px 0 100px 0px;
+    }
+    
+    .bj-origem-card-box2 h5.border-h5 {
+        border-left: 5px solid #f00;
+        padding-left: 6px;
+        color: #ffffff;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    
+    .bj-origem-card-box2 h5 span {
+        font-weight: 400;
+    }
+    
+    .bj-origem-card-box2 ul {
+        list-style: none;
+        display: initial;
+    }
+    
+    .bj-origem-card-box2 ul li {
+        margin: 9px 0px;
+    }
+    
+    .bj-origem-card-box2 ul li span {
+        display: block;
+        margin-left: 52px;
+        font-size: 14px;
+        margin-top: -14px;
+    }
+    
+    .bj-origem-card-box2 ul li i {
+        border: 1px solid;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .bj-column-img .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    
+    
+    /* Create four equal columns that sits next to each other */
+    
+    .bj-column-img .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+    
+    .bj-column-img .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .bj-text-list h4{
+        font-size: 24px;
+    }
+    .bj-text-list p{
+        font-size: 16px;
+    }
+    .bj-origem-card-box {
+        height: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    
+    @media screen and (max-width: 800px) {
+        .bj-column-img .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 600px) {
+        .bj-column-img .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    
+    /*........................................restauants.css..............................*/
+    
+    
+    /*......................................midea..................................*/
+    
+    @media (max-width: 375px) {
+        .bj-origem-card-box {
+            padding: 18px 11px;
+    
+        }
+    
+        .bj-origem-card-box2 {
+            padding: 30px 0px 20px 11px;
+        }
+    
+        /*  .bj-origem-card-box ul li {
+           font-size: 11px;
+       }*/
+    
+    }
+    
+    @media (max-width: 575px) {
+        .medium-price .card .card-img-top {
+            width: 100%;
+            height: 250px;
+        }
+        .carousel-text span {
+            font-size: 14px;
+        }
+    
+        .bj-origem {
+            text-align: center;
+        }
+    
+        button.btn.btn-danger.mr-1 {
+            margin: 15px 0px;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-expand-lg {
+            background: #000000;
+        }
+        .carousel-text {
+            text-align: center;
+        }
+        .carousel-text p {
+            width: 100%;
+        }
+        .bj-origem-card-img {
+            width: 100%;
+        }
+        .bj-origem-card-box {
+            width: 100%;
+        }
+        .bj-origem-card-img2 {
+            width: 100%;
+        }
+        .bj-origem-card-box2 {
+            width: 100%;
+        }
+        .bj-about-background {
+            width: 100%;
+            height: 660px;
+        }
+    }
+    @media (max-width: 767px) {
+        .bj-recommendations .bj-content {
+            padding: 40px 20px;
+        }
+        .bj-map {
+            padding: 25px 0px;
+        }
+        .bj-image-border img {
+            height: 290px;
+            width: 290px;
+        }
+        .bj-text-list {
+            margin-bottom: 22px;
+        }
+        .bj-text-list h4{
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        .bj-text-list p{
+            font-size: 16px;
+        }
+        .bj-origem-card-box {
+            height: 100%;
+        }
+    
+        .bj-origem-card-box {
+            margin: -38px 0 48px 0px;
+        }
+    
+        .bj-origem-card-box2 {
+            margin: -40px 0 48px 0px;
+        }
+        .bj-about-background {
+            width: 100%;
+            height: 970px;
+        }
+    }
+    @media (max-width: 500px) {
+        .bj-about-background {
+            width: 100%;
+            height: 1100px;
+        }
+    }
+
+    /*......................................midea..................................*/
+}

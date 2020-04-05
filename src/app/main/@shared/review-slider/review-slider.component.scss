@@ -1,0 +1,84 @@
+@import "src/@fuse/scss/fuse";
+#bj-reviews {
+    margin-bottom: 36px;
+    .reviews-slider{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .reviews-slider .carousel-control-next, .reviews-slider .carousel-control-prev{
+        width:20px;
+        color: grey;
+        font-size: 20px;
+    }
+    .reviews-slider .carousel-control-prev{
+        left : -30px;
+    }
+    .reviews-slider .carousel-control-next{
+        right : -30px;
+    }
+
+    .carousel-item {
+        width: 100%;
+        padding: 31px 0px;
+        background: #403e3e1a;
+        border-radius: 12px;
+    }
+    @media (max-width: 990px) {
+        .carousel-item {
+            text-align: center;
+        }
+        .carousel-text p{
+            margin: auto;
+        }
+    }
+    .carousel-img {
+        text-align: center;
+    }
+
+    .carousel-img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .carousel-text span {
+        background: red;
+        padding: 1px 14px;
+        font-size: 16px;
+        border-radius: 15px;
+        color: #fff;
+    }
+    .carousel-text h4 {
+        font-size: 24px;
+    }
+    .carousel-text p {
+        width: 91%;
+        font-size: 16px;
+        
+    }
+
+    .carousel-text button.show_hide {
+        border-radius: 10px;
+        color: red;
+        font-size: 14px;;
+        border: 1px solid;
+        padding: 0px 24px;
+        outline: none;
+        height: 36px;
+    }
+    .review-text{
+        height: 120px;
+        overflow: hidden;
+        font-size: 14px;
+        margin-bottom: 8px;
+        padding-right: 16px;
+    }
+    .review-text-more{
+        height: 120px;
+        overflow: scroll;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+}

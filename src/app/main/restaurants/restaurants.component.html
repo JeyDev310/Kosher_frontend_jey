@@ -1,0 +1,147 @@
+<div  id="restaurantsb">
+    <app-header></app-header>
+    <div class="bj-background">
+        <h1>RESTAURANT</h1>
+    </div>
+   
+    <app-image-fancy  *ngIf="restaurant" ></app-image-fancy>
+    <div *ngIf="!restaurant" class="data-err">
+        There is no restaurant data to be displayed.
+    </div>
+    <div *ngIf="restaurant">
+<!-- bj-origem-fresh -->
+    <div class="bj-origem-fresh">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 my-3">
+                    <div class="bj-origem">
+                        <h4>{{restaurant.name}}</h4>
+                        <p class="p-bold"><span>
+                            <ngx-star-rating class="ngx-star" [(ngModel)]="restaurant.rating"></ngx-star-rating>
+                            </span> {{restaurant.user_ratings_total}} reviws</p>
+                        <p> {{restaurant.formatted_address}} </p>
+                        <div *ngIf="restaurant.opening_hours.open_new">Open new: <span style="color:red;">Opened</span></div>
+                        <div *ngIf="!restaurant.opening_hours.open_new">Open new: <span style="color:red;">Closed</span></div>  
+                        <div *ngFor="let text of restaurant.opening_hours.weekday_text">
+                            <span style="font-size: 12px;">{{text}}</span>
+                        </div>
+                        <p style="margin-top:8px;">{{restaurant.international_phone_number}}</p>
+                        <!-- <button class="btn btn-danger">ADD REVIWS</button>
+                        <button class="btn btn-danger">DIRECTION</button>
+                        <button class="btn btn-danger">WEBSITE</button> -->
+                        <button mat-raised-button class="res-btn">RESERVATION</button>
+                        <button mat-raised-button class="res-btn">DIRECTION</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 my-3">
+                    <div class="bj-origem-map">
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7440.560449683046!2d72.81416980895209!3d21.18102421343127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1583928617392!5m2!1sen!2sin" width="100%" height="270px" frameborder="0" style="border:0; border-radius: 20px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                         -->
+                         <app-map [resLat]=lat [resLng]=lng [flag]="false"></app-map>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bj-origem-fresh -->
+
+    <!-- bj-origem-card -->
+    <div class="bj-origem-card ">
+        <div class="container">
+            <div class="bj-origem-card-img">
+                <img src="https://urbanjourney.com/public/file/article/SaladStop.png">
+            </div>
+
+            <div class="bj-origem-card-box">
+                <h5 class="border-h5">LOCATION AND <span>CONTACT INFRMATION </span></h5>
+                <ul>
+                    <li fxLayoutAlign="start center"><mat-icon class="bj-details-icon">room</mat-icon> {{restaurant.formatted_address}}</li>
+                    <li fxLayoutAlign="start center"><mat-icon class="bj-details-icon">location_city</mat-icon> {{restaurant.vicinity}}</li>
+                    <li fxLayoutAlign="start center"><mat-icon class="bj-details-icon">call</mat-icon> {{restaurant.international_phone_number}}</li>
+                </ul>
+                <button mat-raised-button class="res-btn2">IMPROVE THIS PROFILE</button>
+                <button mat-stroked-button class="res-btn1">EMAIL</button>
+                <button mat-stroked-button (click)="onWebsite()" class="res-btn1">WEBSITE</button>
+            </div>
+        </div>
+    </div>
+    <!-- bj-origem-card -->
+
+    <!-- bj-origem-card2 -->
+    <div class="bj-origem-card2">
+        <div class="container">
+            <div class="bj-origem-card-img2">
+                <img src="../../../assets/images/home-page/food_image/f5.jpg">
+            </div>
+
+            <div class="bj-origem-card-box2">
+                <h5 class="border-h5">DETAILS</h5>
+                <ul>
+                    <li><mat-icon class="bj-details-icon">attach_money</mat-icon><span style="font-size: 16px;">PRICERANGE</span><span class="bj-location"> 85-425 </span></li>
+                    <li><mat-icon class="bj-details-icon">swap_vert</mat-icon><span style="font-size: 16px;">DIFERENT CUISINES</span><span class="bj-location">coffe shop</span></li>
+                    <li><mat-icon class="bj-details-icon">room</mat-icon><span style="font-size: 16px;">SPECIAL FOOD CONSTRAINTS</span><span class="bj-location">Vegetarian friedly, vegan options glutein free options</span></li>
+                </ul>
+
+                <button mat-raised-button (click)="onDetails()" class="res-btn3">VIEW ALL DETAILS</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- bj-origem-card2 -->
+
+    <!-- bj-origem-card -->
+    <div class="bj-origem-card ">
+        <div class="container">
+            <div class="bj-origem-card-img">
+                <img src="../../../assets/images/backgrounds/restaurant_back2.jpg">
+            </div>
+
+            <div class="bj-origem-card-box"> 
+                <h5 class="border-h5"> GRADES AND <span>OPINIONS </span></h5>
+                <h6  style="font-size: 16px;">REVIEWS</h6>
+                <p class="p-bold"><span>
+                    <ngx-star-rating class="ngx-star" [(ngModel)]="restaurant.rating"></ngx-star-rating>
+                </span></p>
+                <p style="font-size: 16px;"># 1 of 66 Coffee & Tea in Tel Aviv</p>
+                <h6 style="font-size: 16px;">THE 2019 CERTIFICATE OF EXCELLENCE</h6>
+
+                <h6 style="font-size: 16px;">RATINGS</h6>
+
+                <span class="float-right">
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                </span>
+                <h6 style="font-size: 16px;">Food</h6>
+
+                <span class="float-right">
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                </span>
+                <h6 style="font-size: 16px;">Service</h6>
+
+                <span class="float-right">
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                    <i class="fa fa-star star"></i>
+                </span>
+                <h6 style="font-size: 16px;">exchang</h6>
+            </div>
+        </div>
+    </div>
+
+    <app-review-slider *ngIf="restaurant"></app-review-slider>
+    <app-footer *ngIf="restaurant"></app-footer>
+    </div>  
+</div>
+<!-- bj-reviews -->
+
+<!-- bj-footer -->

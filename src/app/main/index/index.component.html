@@ -1,0 +1,234 @@
+<div id="index">
+<!-- navbar -->
+    <app-header></app-header>
+    <!-- navbar   -->
+
+    <!-- bj-background -->
+    <div class="bj-background">
+        <h1>RESTAURANTS</h1>
+    </div>
+    <!-- bj-background -->
+
+    <!-- bj-recommendations -->
+    <div class="bj-recommendations">
+        <div class="container">
+            <div class="bj-content">
+                <h5>RECOMMENDATIONS <span>FOR YOU</span></h5  >
+        <div class="row">
+          <div *ngIf = "restaurants?.Steakhouse" class="col-lg-3 col-md-6 col-6 my-2">
+            <div (click)="onResList('Steakhouse')" class="bj-image-box">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/db/ac/74/steakhouse-filet-salad.jpg">
+              <p>Steakhouse({{restaurants?.Steakhouse?.length}})</p>
+            </div>
+          </div>
+
+          <div *ngIf = "restaurants?.Cafe" class="col-lg-3 col-md-6 col-6 my-2">
+            <div (click)="onResList('Cafe')" class="bj-image-box">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Cappuccino_at_Lund.jpg">
+              <p>Cafe({{restaurants?.Cafe?.length}})</p>
+            </div>
+          </div>
+
+          <div *ngIf = "restaurants?.Arabic" class="col-lg-3 col-md-6 col-6 my-2">
+            <div (click)="onResList('Arabic')" class="bj-image-box">
+              <img src="https://www.manjulaskitchen.com/blog/wp-content/uploads/chilli_paneer.jpg">
+              <p>Arabic({{restaurants?.Arabic?.length}})</p>
+            </div>
+          </div>
+
+          <div *ngIf = "restaurants?.Seafood" class="col-lg-3 col-md-6 col-6 my-2">
+            <div (click)="onResList('Seafood')" class="bj-image-box">
+              <img src="https://www.waltsfishmarketrestaurant.com/images/2019/05/08/food-web-1.jpg">
+              <p>Seafood({{restaurants?.Seafood?.length}})</p>
+            </div>
+          </div>
+
+          <div  *ngIf = "restaurants?.Italian" class="col-lg-3 col-md-6 col-6 my-2">
+            <div (click)="onResList('Italian')" class="bj-image-box">
+              <img src="https://4fbiobvvqqs19u27y3vblno6-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/DSC_3963-2-2500x1669.jpeg">
+              <p>Italian({{restaurants?.Italian?.length}})</p>
+            </div>
+          </div>
+
+          <div *ngIf = "restaurants?.Pizza" class="col-lg-3 col-md-6 col-6 my-2">
+            <div (click)="onResList('Pizza')" class="bj-image-box">
+              <img src="https://static.toiimg.com/photo/49672332/.jpg">
+              <p>Pizza({{restaurants?.Pizza?.length}})</p>
+            </div>
+          </div>
+
+          <div *ngIf = "restaurants?.Sushi" class="col-lg-3 col-md-6 col-6 my-2">
+            <div (click)="onResList('Sushi')" class="bj-image-box">
+              <img src="https://images.mid-day.com/images/2017/jun/japanese-food-l.jpg">
+              <p>Sushi({{restaurants.Sushi?.length}})</p>
+            </div>
+          </div>
+
+          <div *ngIf = "restaurants?.Greek" class="col-lg-3 col-md-6 col-6 my-2">
+            <div (click)="onResList('Greek')" class="bj-image-box">
+              <img src="https://irp-cdn.multiscreensite.com/5fe03c1a/dms3rep/multi/mobile/147334258-1920x1285.jpg">
+              <p>Greek({{restaurants.Greek?.length}})</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bj-recommendations -->
+
+  <!-- bj-item-box -->
+  <div class="bj-item-box">
+   <div class="container">
+     <div class="row">
+        <div class="col-lg-3 col-md-12 mb-5 col-12">
+          <div class="type-of-business" *ngFor="let items of searchItem">
+            <h4>{{items.name}}</h4>
+            <div class="bj-checkbox">   
+                <div class="check" *ngFor="let item of items.item; let i = index">
+                    <mat-checkbox  (change)="onCheckChange($event, item)"><span class="check-title"> {{item}}</span></mat-checkbox>
+                </div>
+                <!-- <input type="checkbox" checked="">
+                <span class="checkmark"></span> -->
+              <button class="show_hide" (click)="flag=!flag" data-content="toggle-text">Show More <i class="fa fa-caret-down"></i></button>
+              <div *ngIf="flag" class="content">
+                <div class="container-box">TEST
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+       </div>
+
+       <div class="col-lg-9 col-md-12 col-12">
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <mat-icon *ngIf="isLogging" style="margin: auto;">
+            <mat-spinner color="warn" diameter="50">
+            </mat-spinner>
+          </mat-icon>
+        </div>
+         <div class="medium-price">
+          <a class="flate" (click)="onClickShowAll()">Show All</a>
+            <h5 *ngIf="query_test!=''"class="border-h5" style="font-variant: small-caps;"><span>{{query_test}}</span></h5>
+            <h5 *ngIf="query_test==''" class="border-h5" style="font-variant: small-caps;"><span>All RESTAURANTS</span></h5>
+            <h5 *ngIf="errFlag" class="border-h5" style="font-variant: small-caps;"><span>No Restaurants Match Your Search.</span></h5>
+                <div class="row">
+                    <div *ngFor="let restaurant of selectRestaurants; let i = index;" class="col-lg-4 col-md-6 col-12 my-3">
+                        <div *ngIf= "i < 10" class="card" (click)="onSelectRes(restaurant)">
+                            <img *ngIf="restaurant.photos" class="card-img-top" src="{{restaurant?.photos[0]?.getUrl()+'=s30-w45'}}" alt="Card image cap">
+                            <img *ngIf="!restaurant.photos" class="card-img-top" src="https://cms.hostelworld.com/hwblog/wp-content/uploads/sites/2/2014/08/6.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                              <h5 class="card-title">{{restaurant.name}}</h5>                                         
+                              <p class="card-text" *ngIf="restaurant.price_level == 0 || !restaurant.price_level">{{restaurant.vicinity}}</p>
+                              <p class="card-text" *ngIf="restaurant.price_level == 1">$ {{restaurant.vicinity}}</p>
+                              <p class="card-text" *ngIf="restaurant.price_level == 2">$$ {{restaurant.vicinity}}</p>
+                              <p class="card-text" *ngIf="restaurant.price_level == 3">$$$ {{restaurant.vicinity}}</p>
+                              <p class="card-text" *ngIf="restaurant.price_level == 4">$$$$ {{restaurant.vicinity}}</p>
+                            </div>
+                            <div class="card-footer border-success" fxLayout="row" style="padding-bottom: 8px;">
+                              <div>{{restaurant.user_ratings_total}}  Reviws</div>
+                              <ngx-star-rating class="ngx-star" [(ngModel)]="restaurant.rating"></ngx-star-rating>
+                            </div>
+                        </div>
+
+                      </div>
+                    <div class="div-border-bottom"></div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+    </div>
+    <!-- bj-item-box -->
+    
+    <!-- bj-march-deals -->
+    <div class="bj-march-deals">
+        <div class="container">
+            <h5 class="border-h5">MARCH <span>DEALS</span></h5>
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-12 my-3">
+                    <div class="bj-image1 ">
+                        <div class="date traditional">
+                            <p>
+                                <span class="day">50%</span>
+                                <span class="month">OFF</span>
+                            </p>
+                        </div>
+                        <p class="p-padding">Restaurant Name,New York,United Stataes </p>
+                        <p class="span-p"><a href="#"> Explore  > </a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 my-3">
+                            <div class="bj-image2 ">
+                                <div class="date traditional">
+                                    <p>
+                                        <span class="day">20%</span>
+                                        <span class="month">OFF</span>
+                                    </p>
+                                </div>
+                                 <p class="p-padding">Restaurant Name,New York,United Stataes </p>
+                                <p class="span-p"><a href="#"> Explore  > </a></p>
+                            </div>
+                        </div>
+
+                         <div class="col-lg-6 col-md-6 col-12 my-3">
+                            <div class="bj-image3 ">
+                                <div class="date traditional">
+                                    <p>
+                                        <span class="day">50%</span>
+                                        <span class="month">OFF</span>
+                                    </p>
+                                </div>
+                                <p class="p-padding">Restaurant Name,New York,United Stataes </p>
+                                <p class="span-p"><a href="#"> Explore  > </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- bj-march-deals -->
+
+    <!-- bj-map -->
+    <div class="bj-map">
+        <div class="container">
+            <span class="flate">Explore our map ></span>
+            <h5 class="border-h5"><span>BE</span> INSPIRED</h5>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7440.560449683046!2d72.81416980895209!3d21.18102421343127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1583928617392!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+            <agm-map #indexMap class="map" [latitude]="location.lat" [longitude]="location.lng" [zoom]="location.zoom" [disableDefaultUI]="true" [scrollwheel]="flase" [zoomControl]="false" [scaleControl]="false" [gestureHandling]="'cooperative'">
+              
+              <agm-marker [latitude]="location.lat"  [longitude]="location.lng" [markerDraggable]="false" (dragEnd)='markerDragEnd($event)'></agm-marker>
+              <agm-marker *ngFor="let restaurant  of selectRestaurants" [latitude]="restaurant.geometry.location.lat()" [longitude]="restaurant.geometry.location.lng()" [markerDraggable]="false" (dragEnd)='markerDragEnd($event)'></agm-marker>
+            </agm-map>
+          
+          </div>
+    </div>
+    <!-- bj-map -->
+
+    <app-footer></app-footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".content").hide();
+            $(".show_hide").on("click", function () {
+                var txt = $(this).next(".content").is(':visible') ? 'Show More <i class="fa fa-caret-down"></i>' : 'Show Less <i class="fa fa-caret-up"></i>';
+                $(this).html(txt);
+                $(this).next('.content').slideToggle(200);
+            });
+        });
+    </script> -->
+</div>

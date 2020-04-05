@@ -1,0 +1,38 @@
+<div id="bj-reviews">
+    <div class="container">
+        <h4 style="font-size: 24px;">REVIEWS({{restaurant.user_ratings_total}})</h4>
+        <div class="reviews-slider">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" >
+                    <div class="carousel-item" *ngFor="let review of restaurant.reviews; let i = index" [ngClass]="{'active': i == 0 }">
+                        <div class="carousel-box">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12 col-12">
+                                    <div class="carousel-img">
+                                        <img src="{{review.profile_photo_url}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-12 col-12">
+                                    <div class="carousel-text">
+                                        <span>{{ review.relative_time_description }} </span>
+                                        <h4>{{review.author_name}}</h4>
+                                        <div class="review-text" [ngClass]="{'review-text-more': flag }">{{review.text}}</div>
+                                        <button mat-raised-button class="show_hide" (click)="flag=!flag" data-content="toggle-text"> More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,9 +4,23 @@
 
 export const environment = {
     production: false,
-    hmr       : false
+    hmr       : false,
+    firebaseConfig : {
+        apiKey: "AIzaSyC9FXNUnMhx5mB6p02Bs6iokk2HDV3bdn8",
+        authDomain: "kosher-5682d.firebaseapp.com",
+        databaseURL: "https://kosher-5682d.firebaseio.com",
+        projectId: "kosher-5682d",
+        storageBucket: "kosher-5682d.appspot.com",
+        messagingSenderId: "713096864714",
+        appId: "1:713096864714:web:61600a86046bc5177b6533",
+        measurementId: "G-JWZ82N9PZ5"
+      },
+      googleConfig :  {
+        apiKey:'AIzaSyCmua_JtLFnNux2uKsi1sACWNm_qrSxlBo',
+        libraries: ['places'],
+    },
 };
-
+// AIzaSyB1LeLj7AG0CE-4qcaKD27V_Mp9OFa3h-M
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

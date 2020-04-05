@@ -1,0 +1,61 @@
+@import "src/@fuse/scss/fuse";
+#search-item{
+    
+    width: 100%;
+    .text-btm2 {
+        color: #ffffff;
+        font-size: 22px;
+        margin: 12px 0 0 0;
+        font-weight: 600;
+    }
+    .line{
+        width: 100px;
+        height: 2px;
+        border-color: #11a0a9;
+        background-color: #11a0a9;
+    }
+    .mat-select-box {
+        margin: 8px 0px 0px 0px;
+        width: 200px;
+        @include media-breakpoint('xs') {
+            margin: 8px 0px 8px 0px;
+            // width: 100%
+        }
+        height: 48px;
+        padding: 12px;
+        // height: 48px;
+        min-height: 48px;
+        box-shadow: 0 2px 15px 0 rgba(13, 62, 83, 0.24);
+        background-color: #fafafa;
+    }
+    .option-title{
+        font-size: 16px;
+        color: #ffffff;
+        margin-top: 15px;
+    }
+    .option-text{
+        font-size: 16px;
+        color:#212529;
+    }
+    .check{
+        margin: 16px;       
+    }
+    .check-title{
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .search-btn{
+        background-color: #11a0a9;
+        color: #ffffff;
+        font-size: 16px;
+        height: 48px;
+        // margin-right: 16px;
+    }
+    .cancel-btn{
+        background-color: #0770e3;
+        color: #ffffff;
+        font-size: 16px;
+        height: 42px;
+    }
+}

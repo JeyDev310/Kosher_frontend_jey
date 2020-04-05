@@ -1,0 +1,51 @@
+<div id="search-item">
+    <div class="popup-form" fxLayout="column" fxLayoutAlign="end center">
+        <h2 class="tt-u text-btm2"><span>BOOK YOUR PLACES OF RESTAURANT</span></h2>
+        <!-- <div class="line"></div> -->
+        <!-- <div fxLayout="column" fxLayoutAlign="start start" fxLayoutAlign.xs="start center" > -->
+            <div fxLayout="row" fxLayoutAlign="center end" fxLayout.xs="column">
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">Date</div>
+                    <div fxLayout="row" class="mat-select-box" fxLayoutAlign="start center" >
+                        <input fxFlex="80" readonly [(ngModel)]="requestDate" class="p-0 option-text" [ngModelOptions]="{standalone: true}" name="requestDate" [matDatepicker]="picker1" required/>
+                        <div fxFlex="15">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">Time</div>
+                    <div fxLayout="row" class="mat-select-box" fxLayoutAlign="start center" >
+                        <input fxFlex="80"  [ngxTimepicker]="toggleTimepicker" class="p-0 option-text" [disableClick]="true" readonly>
+                        <div fxFlex="15">
+                            <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
+                            <ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">No. People</div>
+                    <div fxFlex="50" class="mat-select-box">
+                        <mat-select class="option-text p-0" placeholder="No. People" required>
+                            <mat-option *ngFor="let option of options" value="{{option}}">{{option}}</mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">Your Place</div>
+                    <div fxFlex="50" class="mat-select-box">
+                        <mat-select class="option-text p-0" placeholder="Country" required>
+                            <mat-option *ngFor="let option of options" value="{{option}}">{{option}}</mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+                
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <button mat-raised-button (click)="onRestauant()" class="search-btn">SEARCH RESTAURANT</button>
+                </div>
+            </div>
+        <!-- </div> -->
+        
+    </div>
+</div>

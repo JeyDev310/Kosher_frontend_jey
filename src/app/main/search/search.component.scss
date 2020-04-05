@@ -1,0 +1,62 @@
+@import "src/@fuse/scss/fuse";
+#search{
+    background-color: rgba(4,39,89,0.88);
+    .tab-label{
+        margin: 0 10px;
+        width: 70px;
+        background-color: #0770e3;
+        display: block;
+        padding: 0 30px 0 42px;
+        position: relative;
+        font: 400 16px/38px 'Lato', sans-serif;
+        text-transform: uppercase;
+        border-radius: 8px 8px 0 0;
+    }
+    .tab-title{
+        color: #fff;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .tab-icon{
+        color: #ffffff;
+        // font-size: 16px;
+    }
+  
+    // z-index: 999;
+    // position: fixed;
+    // top: 50%;
+    // right: 0;
+    // color: #fff;
+   
+    // border-radius: 25px;
+    // padding: 0;
+    // transform: translate(0,-50%);
+     // background: rgba(4,39,89,0.88);
+    // width: 900px;
+}
+::ng-deep .mat-tab-label{
+    background-color: #0770e3;
+    border-radius: 10px 10px 0 0;
+    margin: 0 3px;
+    color: #ffffff;
+    font-size: 16px;
+}
+::ng-deep .mat-tab-label:link{
+    background-color: #11a0a9 !important;
+}
+::ng-deep .mat-tab-label:visited{
+    background-color: #11a0a9 !important;
+}
+::ng-deep .mat-tab-label:hover{
+    background-color: #11a0a9;
+}
+::ng-deep .mat-tab-label:active{
+    background-color: #11a0a9 !important;
+}
+::ng-deep .mat-tab-label:focus{
+    background-color: #11a0a9 !important;
+}
+
+::ng-deep .mat-tab-header{
+    border-bottom: 2px solid rgba(255, 255, 255, 1) !important;
+}

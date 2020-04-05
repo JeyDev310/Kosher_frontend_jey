@@ -1,8 +1,3 @@
-/* 
- * Create HTML5 elements for IE's sake
- * Reference: http://ejohn.org/blog/html5-shiv/
- * Reference: http://remysharp.com/2009/01/07/html5-enabling-script/
- */
 var totalscript = function(){
 
 	
@@ -20,20 +15,19 @@ $(document).ready(function() {
           $('ul.nav-menu').animate({ height: 'toggle'}, 300);
       });	  
 });
-
-$(document).ready(function(){
-$(".product_finder_text").click(function(){
-$(".getin-popup").toggleClass("full-show");});
-})
-
-
-//$(document).ready(function() {
-//     $('.popup-btn').click(function() {
-//          $('.getin-popup').animate({ height: 'toggle'}, 300);
-//      });	  
-//});
-
-
+// jQuery.browser = {};
+// (function () {
+// 	jQuery.browser.msie = false;
+// 	jQuery.browser.version = 0;
+// 	if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+// 		jQuery.browser.msie = true;
+// 		jQuery.browser.version = RegExp.$1;
+// 		}
+// 		})();
+// 	$(document).ready(function(){
+// 	$(".product_finder_text").click(function(){
+// 	$(".getin-popup").toggleClass("full-show");});
+// })
 
 $(document).ready(function() { 
 //if ($(window).width() < 740) {
@@ -50,37 +44,32 @@ $(document).ready(function() {
     });
 //}
 });
-
+$.noConflict();
 $(document).ready( function() {
-
-if ($(window).width() > 1190) {
-	
-	$('.carousel').carousel({frontWidth:600,frontHeight:400,carouselWidth:1200,carouselHeight:400,directionNav:true,reflection: false,shadow:false,buttonNav:'bullets'});
-	
+	console.log('this is class', $('.wel-carousel'));
+	if ($(window).width() > 1190) {
+		
+		$('.wel-carousel').carousel({frontWidth:600,frontHeight:400,carouselWidth:1200,carouselHeight:400,directionNav:true,reflection: false,shadow:false,buttonNav:'bullets'});
+		
+		}
+	if ($(window).width() > 990) {
+		$('.wel-carousel').carousel({frontWidth:500,frontHeight:333,carouselWidth:1000,carouselHeight:333,directionNav:true,reflection: false,shadow:false,buttonNav:'bullets'});
+		}
+	if ($(window).width() > 730) {
+		$('.wel-carousel').carousel({frontWidth:374,frontHeight:249,carouselWidth:748,carouselHeight:249,directionNav:true,reflection: false,shadow:false});
+		}
+	if ($(window).width() > 450) {
+		$('.wel-carousel').carousel({frontWidth:230,frontHeight:153,carouselWidth:460,carouselHeight:153,directionNav:true,reflection: false,shadow:false});
 	}
-
-if ($(window).width() > 990) {
-	$('.carousel').carousel({frontWidth:500,frontHeight:333,carouselWidth:1000,carouselHeight:333,directionNav:true,reflection: false,shadow:false,buttonNav:'bullets'});
+	if ($(window).width() > 350) {
+		$('.wel-carousel').carousel({frontWidth:155,frontHeight:103,carouselWidth:310,carouselHeight:103,directionNav:true,reflection: false,shadow:false});
 	}
-	
-if ($(window).width() > 730) {
-	$('.carousel').carousel({frontWidth:374,frontHeight:249,carouselWidth:748,carouselHeight:249,directionNav:true,reflection: false,shadow:false});
-	}
-	
-
-
-if ($(window).width() > 450) {
-$('.carousel').carousel({frontWidth:230,frontHeight:153,carouselWidth:460,carouselHeight:153,directionNav:true,reflection: false,shadow:false});
-}
-if ($(window).width() > 350) {
-$('.carousel').carousel({frontWidth:155,frontHeight:103,carouselWidth:310,carouselHeight:103,directionNav:true,reflection: false,shadow:false});
-}
 
 });
 
 
 
-$(window).load(function () {
+$(window).on('load',function () {
     width1 =  ($(".wrapper").width());
 	var windowwith1 = $(window).width(), divWidth=0;
 	var getwidth1 = ((windowwith1 - width1) / 2);
@@ -105,12 +94,18 @@ $(window).resize(function(){
 	$('.fullpage-content').css({'paddingRight':(getwidth2)+'px'});
 
 });
+// jQuery( document ).ready(function( $ ) {
+//   $("#tabs").tabs();
+// });
 
-$( function() {
-    $( "#tabs" ).tabs();
-  } );
-  
-
+	$(document).ready(function() {
+		$(".content").hide();
+		$(".show_hide").on("click", function() {
+			var txt = $(".content").is(':visible') ? 'Read More' : 'Read Less';
+			$(".show_hide").text(txt);
+			$(this).next('.content').slideToggle(200);
+		});
+	});  
 }
 
 

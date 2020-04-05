@@ -14,6 +14,8 @@ import { FuseTranslationLoaderService } from '@fuse/services/translation-loader.
 import { navigation } from 'app/navigation/navigation';
 import { locale as navigationEnglish } from 'app/navigation/i18n/en';
 import { locale as navigationTurkish } from 'app/navigation/i18n/tr';
+// import { StarRatingComponent } from 'ng-starrating';
+
 
 @Component({
     selector   : 'app',
@@ -51,6 +53,22 @@ export class AppComponent implements OnInit, OnDestroy
         private _platform: Platform
     )
     {
+        this._fuseConfigService.config = {
+            layout: {
+                navbar   : {
+                    hidden: true
+                },
+                toolbar  : {
+                    hidden: true
+                },
+                footer   : {
+                    hidden: true
+                },
+                sidepanel: {
+                    hidden: true
+                }
+            }
+        };
         // Get default navigation
         this.navigation = navigation;
 
@@ -125,6 +143,8 @@ export class AppComponent implements OnInit, OnDestroy
     ngOnInit(): void
     {
         // Subscribe to config changes
+    
+
         this._fuseConfigService.config
             .pipe(takeUntil(this._unsubscribeAll))
             .subscribe((config) => {

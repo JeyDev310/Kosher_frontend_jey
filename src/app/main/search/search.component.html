@@ -1,0 +1,25 @@
+<mat-tab-group id="search" [color]= "accent"  (selectedTabChange)="onSelectBooking($event)">
+    <mat-tab>
+      <ng-template mat-tab-label class="tab-label">
+        <mat-icon class="tab-icon">hotel</mat-icon>
+        <span class="tab-title">HOTEL</span>
+      </ng-template>
+      <app-search-item [searchType]="'HOTEL'" [countries]="contries"></app-search-item>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label class="tab-label">
+        <mat-icon class="tab-icon">local_florist</mat-icon>
+        <span class="tab-title">RESORT</span>
+      </ng-template>
+      <app-search-item [searchType]="'RESORT'" [countries]="contries"></app-search-item>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label class="tab-label">
+        <mat-icon class="tab-icon">local_dining</mat-icon>
+        <span class="tab-title">RESTAURANT</span>
+      </ng-template>
+      <app-search-item [searchType]="'RESTAURANT'" [countries]="contries"></app-search-item>
+    </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,453 @@
+#index{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    .navbar-expand-lg {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    a.nav-link.btn.btn-primary {
+        padding: 6px 32px;
+        width: 120px;
+        margin: auto;
+    }
+
+    a.navbar-brand {
+        color: #000;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    a.navbar-brand span {
+        font-weight: 400;
+    }
+
+
+    a.nav-link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .bj-background {
+        width: 100%;
+        height: 400px;
+        background: red;
+        background-image: linear-gradient(to right, rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(https://www.doitinparis.com/files/2019/bars-restos-food/restos-branches/09/shabour-resto/thumbs-1180x525/shabour-resto.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .search-list{
+        margin: 50px 0 0 0;
+    }
+    .bj-background h1 {
+        text-align: center;
+        color: #fff;
+        padding-top: 135px;
+        font-size: 40px;
+    }
+
+
+    .bj-recommendations .bj-content {
+        margin: -40px auto 26px;
+        background: #0f0644;
+        padding: 40px 100px;
+    }
+
+    .bj-recommendations .bj-content h5 {
+        border-left: 5px solid #f00;
+        padding-left: 6px;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 18px;
+        font-size: 20px;
+    }
+
+    .bj-recommendations .bj-content h5 span {
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    .medium-price a.flate {
+        float: right;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        color:  #020202;
+    }
+
+    .bj-item-box .medium-price h5.border-h5 {
+        margin: 32px 0 16px 0;
+        border-left: 5px solid #f00;
+        padding-left: 6px;
+        color: #020202;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .bj-content .bj-image-box img {
+        width: 100%;
+        height: 140px;
+    }
+    .bj-content .bj-image-box{
+        transition: transform 1.4s;
+        cursor: pointer;
+    }
+    .bj-content .bj-image-box:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.05); 
+    }
+   
+    .bj-content .bj-image-box p {
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .bj-item-box .medium-price h5 span {
+        font-weight: 400;
+    }
+
+    .medium-price .card {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #0f0644;
+        background-clip: border-box;
+        border: 0;
+        border-radius: .25rem;
+        color: #fff;
+    }
+
+    .medium-price .card .card-img-top {
+        cursor: pointer;
+        width: 100%;
+        height: 180px;
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+        transition: transform 1.4s;
+    }
+    .medium-price .card .card-img-top:hover{
+        width: 100%;
+        height: 180px;
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.05); 
+
+    }
+    .medium-price .card .card-body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 12px 18px 4px 18px;
+        height: 100px;
+    }
+
+    .medium-price .card .card-body .card-title {
+        margin-bottom: 4px;
+        font-size: 20px;
+    }
+    .medium-price .card .card-body .card-text{
+        font-size: 16px;
+    }
+    .medium-price .card .border-success {
+        border-color: #676869a6!important;
+        font-size: 16px;
+    }
+
+    .medium-price .card .card-footer {
+        margin: 8px 15px 8px 15px;
+        background-color: rgba(0,0,0,.03);
+        border-top: 1px solid rgba(0,0,0,.125);
+    }
+
+    .medium-price .card .card-footer div {
+        margin-right: 8px;
+    }
+
+    .div-border-bottom {
+        border-bottom: 1px solid #656565;
+        width: 97%;
+        margin: 24px auto;
+    }
+
+    .bj-map {
+        width: 100%;
+        padding: 75px;
+        background: #007bff26;
+    }
+
+    .bj-map h5 span {
+        font-weight: 400;
+    }
+
+    .bj-map h5.border-h5 {
+        border-left: 5px solid #080808;
+        padding-left: 6px;
+        color: #020202;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .bj-map span.flate {
+        float: right;
+        font-size: 16px;
+    }
+
+    .bj-march-deals {
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .bj-march-deals p.p-padding {
+        color: #fff;
+        padding-top: 240px;
+        padding-left: 14px;
+        margin-bottom: 0px;
+        line-height: 1;
+        font-size: 14px;
+    }
+    .bj-march-deals p.span-p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    p.span-p a {
+        text-decoration: none;
+        color: red;
+        padding-left: 12px;
+    }
+
+
+    .bj-march-deals h5.border-h5 {
+        border-left: 5px solid #040404;
+        padding-left: 6px;
+        color: #020202;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .bj-march-deals h5 span {
+        font-weight: 400;
+    }
+
+
+    .bj-march-deals .bj-image1 {
+        width: 100%;
+        height: 300px;
+        background: black;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(6, 6, 6)), url(https://www.hiddencitysecrets.com.au/wp-content/uploads/2019/04/ciao5.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: transform 1.4s;
+    }
+    .bj-march-deals .bj-image1:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.05); 
+    }
+    .bj-march-deals .bj-image2 {
+        width: 100%;
+        height: 300px;
+        background: black;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(6, 6, 6)), url(https://image.freepik.com/foto-gratis/joven-mujer-comiendo-restaurante_52137-6782.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: transform 1.4s;
+    }
+    .bj-march-deals .bj-image2:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.05); 
+    }
+
+    .bj-march-deals .bj-image3 {
+        width: 100%;
+        height: 300px;
+        background: black;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(6, 6, 6)), url(https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/rjvuayoas9ki1olnexkf);
+        background-size: cover;
+        background-position: center;
+        transition: transform 1.4s;
+    }
+    .bj-march-deals .bj-image3:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.05); 
+    }
+
+    .bj-march-deals .bj-image1 p span a {
+        color: red;
+        text-decoration: none;
+    }
+
+    .type-of-business h4 {
+        background: #0f0644;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px;
+        padding-left: 25px;
+        color: #fff;
+    }
+
+    .bj-checkbox {
+        padding: 8px 24px;
+    }
+
+    .type-of-business {
+        box-shadow: 0px 2px 4px #0000005c;
+    }
+
+    /* The container */
+    .container-box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    }
+    /* Date Ribbon */
+    .date {
+        background: red;
+        float: left;
+        height: 75px;
+        margin-left: 15px;
+        position: relative;
+        width: 70px;
+    }
+    .date p {
+        color: #f6f6f6;
+        font: 18px/30px Georgia, sans-serif;
+        position: relative;
+        text-align: center;
+        text-shadow: 0 -1px 1px hsla(0, 0%, 0%, 0.1);
+        font-size: 16px;
+    }
+    .date .day {
+        display: block;
+        font-size: 28px;
+        padding-top: 6px;
+    }
+    /* Traditional Ribbon */
+    .traditional:after,
+    .traditional:before {
+        border-top: 17px solid red;
+        bottom: -15px;
+        content: '';
+        height: 0;
+        position: absolute;
+        width: 0;
+    }
+    .traditional:after {
+        border-right: 35px solid transparent;
+        left: 0;
+    }
+    .traditional:before {
+        border-left: 35px solid transparent;
+        right: 0;
+    }
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #000;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container-box:hover input ~ .checkmark {
+    background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container-box input:checked ~ .checkmark {
+        background-color: #000000;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container-box input:checked ~ .checkmark:after {
+    display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container-box .checkmark:after {
+        left: 7px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .type-of-business button.show_hide {
+        border: 0;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        color: #007bff;
+        font-size: 16px;
+    }
+
+    .ngx-star{
+        font-size: 24px;
+        color: red;
+    }
+    .map{
+        width: 100%;
+        height: 300px;
+    }
+    /*........................................footer.css...............................*/
+
+    
+}
+
+::ng-deep label{
+    font-size: 20px !important;
+    color: #ffffff !important;
+    padding: 5px !important;
+}
+::ng-deep label.star::before{
+    color: red !important;
+}
+
+/*......................................midea..................................*/

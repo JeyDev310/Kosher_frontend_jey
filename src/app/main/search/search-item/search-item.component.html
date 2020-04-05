@@ -1,0 +1,62 @@
+<div id="search-item">
+    <div class="popup-form">
+        <h2 class="tt-u text-btm2"><span>BOOK YOUR PLACES OF</span> {{searchType}}</h2>
+        <div class="line"></div>
+        <div fxLayout="column" fxLayoutAlign="start start" fxLayoutAlign.xs="start center" >
+            <div fxLayout="row" fxLayoutAlign="start start" fxLayout.xs="column">
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">Country</div>
+                    <div class="mat-select-box">
+                        <mat-select class="option-text p-0" id="country" [(ngModel)]="countryKey" (ngModelChange)="onCountrySelect()" placeholder="Country" required>
+                            <mat-option *ngFor="let country of countries" [value]="country.key">{{country.name}}</mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">Your Place</div>
+                    <div class="mat-select-box">
+                        <input class="option-text p-0" placeholder="Your Place" #search required/>
+                    </div>
+                </div>
+                <!-- <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">Time</div>
+                    <div fxLayout="row" class="mat-select-box" fxLayoutAlign="start center" >
+                        <input fxFlex="80"  [ngxTimepicker]="toggleTimepicker" class="p-0 option-text" [disableClick]="true" readonly>
+                        <div fxFlex="15">
+                            <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
+                            <ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start start" fxLayout.xs="column"  >
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">Date</div>
+                    <div fxLayout="row" class="mat-select-box" fxLayoutAlign="start center" >
+                        <input fxFlex="80" readonly [(ngModel)]="requestDate" class="p-0 option-text" [ngModelOptions]="{standalone: true}" name="requestDate" [matDatepicker]="picker1" required/>
+                        <div fxFlex="15">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="start start" >
+                    <div class="option-title">No. People</div>
+                    <div fxFlex="50" class="mat-select-box">
+                        <mat-select class="option-text p-0" placeholder="No. People" required>
+                            <mat-option *ngFor="let people of peoples" value="{{people}}">{{people}}</mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+            </div>
+            <div class="check">
+                <mat-checkbox (change)="onChang($even)"><span class="check-title">Add Nearby Restaurant</span></mat-checkbox>
+            </div>
+            <div fxLayout="row">
+                <button mat-raised-button (click)="onRestauant()" class="search-btn">SEARCH YOUR RESTAURANT</button>
+                <!-- <button mat-raised-button class="cancel-btn">CANCEL</button> -->
+            </div>  
+        </div>
+        
+    </div>
+</div>

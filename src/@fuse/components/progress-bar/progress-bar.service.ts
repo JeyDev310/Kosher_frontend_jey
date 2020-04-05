@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { filter } from 'rxjs/operators';
+import { Overlay } from '@angular/cdk/overlay';
 
 @Injectable({
     providedIn: 'root'
@@ -13,14 +14,16 @@ export class FuseProgressBarService
     private _mode: BehaviorSubject<string>;
     private _value: BehaviorSubject<number>;
     private _visible: BehaviorSubject<boolean>;
-
+    progress: number;
+    isProgressing: boolean;
     /**
      * Constructor
      *
      * @param {Router} _router
      */
     constructor(
-        private _router: Router
+        private _router: Router,
+        private _overlay: Overlay
     )
     {
         // Initialize the service
@@ -91,42 +94,74 @@ export class FuseProgressBarService
     {
         // Initialize the behavior subjects
         this._bufferValue = new BehaviorSubject(0);
-        this._mode = new BehaviorSubject('indeterminate');
+        this._mode = new BehaviorSubject('determinate');
         this._value = new BehaviorSubject(0);
         this._visible = new BehaviorSubject(false);
 
+        this.isProgressing = false;
         // Subscribe to the router events to show/hide the loading bar
         this._router.events
             .pipe(filter((event) => event instanceof NavigationStart))
             .subscribe(() => {
-                this.show();
+                this.beginLoading1();
             });
 
         this._router.events
             .pipe(filter((event) => event instanceof NavigationEnd || event instanceof NavigationError || event instanceof NavigationCancel))
             .subscribe(() => {
-                this.hide();
+                this.endLoading1();
             });
     }
 
-    // -----------------------------------------------------------------------------------------------------
-    // @ Public methods
-    // -----------------------------------------------------------------------------------------------------
-
-    /**
-     * Show the progress bar
-     */
-    show(): void
-    {
+    beginLoading1(): void{
+        if (this.isProgressing){
+            return;
+        }
+        this.isProgressing = true;
+        this.setProgress(0);
         this._visible.next(true);
-    }
+        setTimeout(() => {
+            this.setProgress(20);
+        }, 100);
+        setTimeout(() => {
+            this.setProgress(30);
+        }, 500);
+        setTimeout(() => {
+            this.setProgress(50);
+        }, 1000);
+        setTimeout(() => {
+            this.setProgress(70);
+        }, 1500);
+        setTimeout(() => {
+            this.setProgress(90);
+        }, 2000);
 
-    /**
-     * Hide the progress bar
-     */
-    hide(): void
-    {
-        this._visible.next(false);
+        setTimeout(() => {
+            this.endLoading1();
+        }, 5000);
+    }
+    endLoading1(): void{
+        this.setProgress(100);
+        this.isProgressing = false;
+        setTimeout(() => {
+            this._visible.next(false);
+        }, 500);
+    }
+    beginLoading2(): void{
+        // console.log('beginLoading2');
+        this.beginLoading1();
+    }
+    endLoading2(): void{
+        // console.log('endLoading2');
+        this.endLoading1();
+    }
+    setProgress(value: number): void{
+        if (!this.isProgressing){
+            return;
+        }
+        this.progress = value;
+        this.setValue(this.progress);
+        this.setBufferValue(this.progress);
     }
 }
 

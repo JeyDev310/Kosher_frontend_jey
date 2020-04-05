@@ -1,0 +1,360 @@
+#restaurantsb{
+    width: 100%;
+    .bj-background {
+        width: 100%;
+        height: 400px;
+        background: red;
+        background-image: linear-gradient(to right, rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(https://www.doitinparis.com/files/2019/bars-restos-food/restos-branches/09/shabour-resto/thumbs-1180x525/shabour-resto.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .bj-background h1 {
+        text-align: center;
+        color: #fff;
+        padding-top: 135px;
+        font-size: 40px;
+    }
+    /*........................................restauants.css..............................*/
+    
+    .bj-origem-fresh {
+        margin: 40px 0;
+    }
+    .bj-origem h4{
+        font-size: 24px;
+    }
+    .bj-origem p span .star {
+        color: red;
+        font-size: 14px;
+        margin: 0px 3px;
+    }
+
+    .bj-origem{
+        font-size: 16px;
+    }
+    .bj-origem button.btn.btn-danger {
+        width: 130px;
+        font-weight: 600;
+        background: red;
+        margin-bottom: 10px;
+    }
+    
+    .btn-outline-danger:hover {
+        color: #fff;
+        background-color: red;
+        border-color: #dc3545;
+    }
+    
+    .bj-origem p.p-bold {
+        color: #aba2a2;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .res-btn{
+        height: 38px;
+        width: 130px;
+        font-weight: 600;
+        background-color: red;
+        margin: 0 10px 10px 0;
+        color: #fff;
+        border-color: #dc3545; 
+    }
+    .res-btn2{
+        height: 38px;
+        width: 192px;
+        font-weight: 600;
+        background-color: red;
+        margin: 0 10px 10px 0;
+        color: #fff;
+        border-color: #dc3545; 
+    }
+    .res-btn3{
+        height: 38px;
+        width: 155px;
+        font-weight: 600;
+        background-color: red;
+        margin: 0 10px 10px 0;
+        color: #fff;
+        border-color: #dc3545; 
+    }
+    .res-btn1{
+        height: 38px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 10px 10px 0;
+        border-color: #dc3545; 
+    }
+    .bj-origem-card-img img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .bj-origem-card {
+        margin: 50px 0px;
+    }
+    
+    .bj-origem-card-img {
+        width: 50%;
+        height: 300px;
+        float: left;
+    }
+    
+    .bj-origem-card-box {
+        background: #0f0644;
+        width: 50%;
+        float: left;
+        padding: 25px;
+        color: #fff;
+        height: 382px;
+        margin: -40px 0 100px 0px;
+
+    }
+    
+    .bj-origem-card-box p.p-bold span .star {
+        color: red;
+        margin: 0px 3px;
+        font-size: 16px;
+    }
+    
+    .bj-origem-card-box .float-right .star {
+        margin: 0px 3px;
+        color: red;
+        font-size: 16px;
+    }
+    .bj-details-icon{
+        border: 1px solid;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    .bj-location{
+        display: block;
+        font-size: 14px;
+        margin: -14px 0 0 56px;
+    }
+    .bj-origem-card-box ul {
+        list-style: none;
+        display: initial;
+    }
+    
+    .bj-origem-card-box ul li {
+        margin: 20px 0px;
+        font-size: 16px;
+        height: 40px;
+    }
+    .bj-origem-card-box h5.border-h5 {
+        border-left: 5px solid #f00;
+        padding-left: 6px;
+        color: #ffffff;
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .bj-origem-card-box h5 span {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .bj-origem-card-box ul {
+        list-style: none;
+        display: initial;
+    }
+    
+    .bj-origem-card-box ul li {
+        margin: 20px 0px;
+    }
+    
+    .bj-origem-card-box ul li i {
+        border: 1px solid;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .bj-origem-card-img2 img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .bj-origem-card2 {
+        margin: 50px 0px;
+    }
+    
+    .bj-origem-card-img2 {
+        width: 50%;
+        height: 300px;
+        float: right;
+    }
+    
+    .bj-origem-card-box2 {
+        background: #0f0644;
+        width: 50%;
+        float: right;
+        padding: 25px;
+        color: #fff;
+        height: 382px;
+        margin: -40px 0 100px 0px;
+    }
+
+    .bj-origem-card-box2 h5 span {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .bj-origem-card-box2 ul {
+        list-style: none;
+        display: initial;
+    }
+    .bj-origem-card-box2 h5.border-h5 {
+        border-left: 5px solid #f00;
+        padding-left: 6px;
+        color: #ffffff;
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .bj-origem-card-box2 ul li {
+        margin: 9px 0px;
+    }
+    
+    .bj-origem-card-box ul li .star {
+        border: 1px solid;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    
+    
+    /*........................................restauants.css..............................*/
+    
+    
+    /*......................................midea..................................*/
+    
+    @media (max-width: 375px) {
+        .bj-origem-card-box {
+            padding: 18px 11px;
+    
+        }
+    
+        .bj-origem-card-box2 {
+            padding: 30px 0px 20px 11px;
+        }
+    
+        /*  .bj-origem-card-box ul li {
+           font-size: 11px;
+       }*/
+    
+    }
+    
+    @media (max-width: 575px) {
+        .medium-price .card .card-img-top {
+            width: 100%;
+            height: 250px;
+        }
+        .carousel-text span {
+            font-size: 14px;
+        }
+    
+        .bj-origem {
+            text-align: center;
+        }
+    
+        button.btn.btn-danger.mr-1 {
+            margin: 15px 0px;
+        }
+    
+    
+    
+    
+    }
+    
+    @media (max-width: 768px) {
+        .bj-recommendations .bj-content {
+            padding: 40px 20px;
+        }
+        .bj-map {
+            padding: 25px 0px;
+        }
+        .bj-image-border img {
+            height: 290px;
+            width: 290px;
+        }
+        .bj-text-list {
+            margin-bottom: 22px;
+        }
+        .bj-origem-card-box {
+            height: 100%;
+        }
+    
+        .bj-origem-card-box {
+            margin: -38px 0 48px 0px;
+        }
+    
+        .bj-origem-card-box2 {
+            margin: -40px 0 48px 0px;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-expand-lg {
+            background: #000000;
+        }
+        .carousel-text {
+            text-align: center;
+        }
+        .carousel-text p {
+            width: 100%;
+        }
+        .bj-origem-card-img {
+            width: 100%;
+        }
+        .bj-origem-card-box {
+            width: 100%;
+        }
+        .bj-origem-card-img2 {
+            width: 100%;
+        }
+        .bj-origem-card-box2 {
+            width: 100%;
+        }
+    }
+    .data-err{
+        text-align: center;
+        margin: 40px;
+        font-size: 20px;
+        
+    }
+    
+    @media (max-width: 1024px) {
+        .bj-about-background {
+            width: 100%;
+            height: 100%;
+        }
+        .owl-carousel .owl-item img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+}
+::ng-deep label{
+    font-size: 20px !important;
+    color: #ffffff !important;
+    padding: 5px !important;
+}
+::ng-deep label.star::before{
+    color: red !important;
+}
