@@ -60,7 +60,7 @@
   "angular-google-map": "0.0.2",
   "angular-in-memory-web-api": "0.8.0",
   "bootstrap": "4.4.1",
-  "chart.js": "2.8.0",
+  "chart.js": "2.9.4",
   "classlist.js": "1.1.20150312",
   "codelyzer": "^5.1.2",
   "d3": "5.9.7",
